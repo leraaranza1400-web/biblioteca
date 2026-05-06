@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Biblioteca Virtual - Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+    <div class="library-bg"></div>
+    <div class="container login-container">
+        <div class="login-card">
+            <div class="library-icon">
+                <span class="icon">📚</span>
+            </div>
+            <h1>Biblioteca Central</h1>
+            <p class="subtitle">Sistema de Gestión de Préstamos</p>
+            
+            <form action="login.php" method="POST" class="login-form">
+                <div class="input-group">
+                    <label>📧 Correo Electrónico</label>
+                    <input type="email" name="email" placeholder="usuario@ejemplo.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>🔒 Contraseña</label>
+                    <input type="password" name="password" placeholder="••••••••" required>
+                </div>
+                
+                <div class="remember-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="recordar">
+                        <span>Recordarme por 30 días</span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn-login">
+                    <span>Ingresar a la Biblioteca</span>
+                </button>
+            </form>
+            
+            <div class="register-link">
+                ¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

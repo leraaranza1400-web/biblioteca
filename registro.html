@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Central - Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="login-body">
+    <div class="library-bg"></div>
+    <div class="container login-container">
+        <div class="login-card">
+            <div class="library-icon">
+                <span class="icon">📝</span>
+            </div>
+            <h1>Nuevo Lector</h1>
+            <p class="subtitle">Regístrate para solicitar préstamos</p>
+            
+            <form action="registrar_usuario.php" method="POST" class="login-form">
+                <div class="input-group">
+                    <label>👤 Nombre Completo</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>📧 Correo Electrónico</label>
+                    <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>🔒 Contraseña</label>
+                    <input type="password" name="password" placeholder="Mínimo 6 caracteres" required>
+                </div>
+                
+                <button type="submit" class="btn-login">
+                    <span>Registrarme</span>
+                </button>
+            </form>
+            
+            <div class="register-link">
+                ¿Ya tienes cuenta? <a href="index.html">Inicia Sesión</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
