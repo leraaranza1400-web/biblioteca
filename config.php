@@ -2,12 +2,12 @@
 // config.php
 $host = 'localhost';
 $dbname = 'libreria_db';
-$user = 'root';
-$password = '#1515#';
+$user = 'sjimenez_db';
+$password = '456789';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PD O::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     die("Error de conexión: " . $e->getMessage());
 }
